@@ -60,7 +60,7 @@ Focused service enumeration identified several notable services:
 
 These services were selected for additional network investigation because they represented important portions of the target's exposed attack surface.
 
-![Nmap Service Enumeration](evidence/01-nmap-service-enumeration.jpg)
+![Nmap Service Enumeration](evidence/01-nmap-service-enumeration.jpeg)
 
 ---
 
@@ -76,7 +76,7 @@ The filter returned **66,610 packets**.
 
 The volume and distribution of SYN traffic across numerous destination ports, correlated with the controlled Nmap activity, demonstrated systematic network and service reconnaissance.
 
-![SYN Scan Correlation](evidence/05-syn-scan-correlation.jpg)
+![SYN Scan Correlation](evidence/05-syn-scan-correlation.jpeg)
 
 ### Analyst Assessment
 
@@ -94,7 +94,7 @@ Observed traffic included connections involving FTP, Telnet, HTTP, SMB, MySQL an
 
 This provided packet-level correlation between the reconnaissance activity and the services exposed by the target.
 
-![TCP Conversations Overview](evidence/06-tcp-conversations-overview.jpg)
+![TCP Conversations Overview](evidence/06-tcp-conversations-overview.jpeg)
 
 ---
 
@@ -106,7 +106,7 @@ Observed requests included standard root requests as well as automated probe pat
 
 This helped distinguish application-layer reconnaissance from the broader TCP scanning activity.
 
-![HTTP Reconnaissance Traffic](evidence/02-http-reconnaissance-traffic.jpg)
+![HTTP Reconnaissance Traffic](evidence/02-http-reconnaissance-traffic.jpeg)
 
 ### HTTP Method Investigation
 
@@ -124,7 +124,7 @@ Traffic analysis identified **112 packets** associated with TCP port 23 between 
 
 Wireshark identified Telnet protocol negotiation within the traffic, confirming connection activity involving the exposed Telnet service.
 
-![Telnet Traffic Analysis](evidence/04-telnet-traffic-analysis.jpg)
+![Telnet Traffic Analysis](evidence/04-telnet-traffic-analysis.jpeg)
 
 ### TCP Stream Analysis
 
